@@ -1,0 +1,50 @@
+:root {
+    --bankin-dark: #0f2a2a;
+    --bankin-accent: #f2b84b;
+    --bankin-muted: #6b7280;
+    --bankin-bg: #f6f2ea;
+}
+
+body.bankin-body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(242, 184, 75, 0.20), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(15, 42, 42, 0.12), transparent 22%),
+        linear-gradient(160deg, #faf7f2 0%, #f4eee3 50%, #edf1ea 100%);
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-brand,
+.display-5 {
+    font-family: 'Sora', sans-serif;
+}
+
+.bankin-navbar {
+    background: linear-gradient(135deg, rgba(15, 42, 42, 0.96), rgba(25, 72, 67, 0.94));
+    box-shadow: 0 12px 30px rgba(15, 42, 42, 0.18);
+}
+
+.brand-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #f2b84b, #d48b2a);
+    color: #1f2937;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.card {
+    border-radius: 1.25rem;
+}
+
+.table thead th {
+    white-space: nowrap;
+}

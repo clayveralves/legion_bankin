@@ -1,0 +1,1 @@
+window.LegionBankin = window.LegionBankin || {};

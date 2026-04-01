@@ -1,0 +1,86 @@
+:root {
+    --welcome-bg: linear-gradient(160deg, #faf7f2 0%, #f4eee3 50%, #edf1ea 100%);
+    --welcome-card: rgba(255, 255, 255, 0.88);
+    --welcome-text: #1f2937;
+    --welcome-muted: #6b7280;
+    --welcome-accent: #0f2a2a;
+    --welcome-highlight: #f2b84b;
+}
+
+body.welcome-body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--welcome-text);
+    background:
+        radial-gradient(circle at top left, rgba(242, 184, 75, 0.18), transparent 22%),
+        radial-gradient(circle at bottom right, rgba(15, 42, 42, 0.12), transparent 20%),
+        var(--welcome-bg);
+}
+
+.welcome-panel {
+    width: min(720px, 100%);
+    background: var(--welcome-card);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 24px 60px rgba(15, 42, 42, 0.14);
+}
+
+.welcome-eyebrow {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(242, 184, 75, 0.18);
+    color: var(--welcome-accent);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.welcome-panel h1 {
+    margin: 0 0 0.75rem;
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.1;
+}
+
+.welcome-panel p {
+    margin: 0;
+    color: var(--welcome-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.welcome-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+}
+
+.welcome-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+    padding: 0.9rem 1.2rem;
+    border-radius: 0.9rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.welcome-actions .welcome-primary {
+    background: var(--welcome-highlight);
+    color: #1f2937;
+}
+
+.welcome-actions .welcome-secondary {
+    background: transparent;
+    border: 1px solid rgba(15, 42, 42, 0.18);
+    color: var(--welcome-accent);
+}
